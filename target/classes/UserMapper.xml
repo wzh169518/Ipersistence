@@ -1,0 +1,28 @@
+<mapper namespace="com.wzh.dao.IUserDao">
+    <!--sql的唯一标识：namespace.id来组成 ： statementId-->
+    <select id="finAll" resultType="com.wzh.pojo.User">
+        select * from user
+    </select>
+
+    <!--
+        User user = new User()
+        user.setId(1)
+        user.setUsername("zhangsan)
+    -->
+    <select id="findByCondition" resultType="com.wzh.pojo.User" parameterType="com.wzh.pojo.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+
+    <update id="updateById" parameterType="com.wzh.pojo.User">
+        update user set username = #{username} where id = #{id}
+    </update>
+
+    <insert id="save" parameterType="com.wzh.pojo.User">
+        INSERT INTO user (id, username) values (#{id}, #{username})
+    </insert>
+
+    <delete id="remove" parameterType="com.wzh.pojo.User">
+        delete from user where id = #{id}
+    </delete>
+
+</mapper>

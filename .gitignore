@@ -1,2 +1,15 @@
-# Project exclude paths
-/target/
+*.idea/
+*/out/
+*/bin/
+*/build/
+*/target/
+/.gradle/
+*/.classpath
+*/.project
+.project
+*/.settings/
+.settings/
+*.iml
+logfiles
+logdir
+

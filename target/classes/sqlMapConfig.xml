@@ -1,0 +1,19 @@
+<configuration>
+
+    <!--数据库配置数据-->
+    <dataSource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql:///demo"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="wzh169518"></property>
+    </dataSource>
+<!--    <dataSource>-->
+<!--        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>-->
+<!--        <property name="jdbcUrl" value="jdbc:mysql://139.224.2.42:33308/test?characterEncoding=UTF-8"></property>-->
+<!--        <property name="username" value="admin"></property>-->
+<!--        <property name="password" value="pH%CC4Q8uG5D"></property>-->
+<!--    </dataSource>-->
+
+    <!--存放mapper.xml的全路径-->
+    <mapper resource="UserMapper.xml"></mapper>
+</configuration>
